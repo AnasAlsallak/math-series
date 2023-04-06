@@ -2,17 +2,18 @@
 
 ## Project: math-series
 
-    Author: Anas Alsallak
-Links and Resources
+    - Author: Anas Alsallak
 
-Setup
-.env requirements (where applicable)
-i.e.
+    - Setup
 
-How to initialize/run your application (where applicable)
-e.g. python main.py
-How to use your library (where applicable)
-Tests
-How do you run tests?
-Any tests of note?
-Describe any tests that you did not complete, skipped, etc
+        - How to initialize/run your application 
+            1. clone the repo on your local machine (git clone SSH).
+            2. navagate to it (cd).
+            3. create a venv (python3.11 -m venv .venv)
+            4. activate it (.venv/bin/activate)
+
+        - How to use your library (where applicable)
+        - Tests
+            - How do you run tests? 
+                1. install pytest if not already installed (pip install pytest)
+                2. on the terminal run (pytest tests/test_series.py)
