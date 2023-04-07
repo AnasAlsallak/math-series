@@ -18,6 +18,10 @@ def fibonacci(n):
         If n is 1, the function returns 1.
         If n is 6, the function returns 8.
     """
+    if not isinstance(n, int) or n < 0:
+        print("Invalid input:", n)
+        raise ValueError("n must be a positive integer")
+    
     if n <= 1:
         return n
     else:
@@ -47,6 +51,10 @@ def lucas(n):
     If n is 1, the function returns 1.
     If n is 6, the function returns 18.
     """
+    if not isinstance(n, int) or n < 0:
+        print("Invalid input:", n)
+        raise ValueError("n must be a positive integer")
+    
     if n == 0:
         return 2
     elif n == 1:
@@ -58,25 +66,20 @@ def lucas(n):
         return b
 
 
-# sum_series
-
 def sum_series(n, first=0, second=1):
     """
-    Calculate and print the nth element in a series.
-
-    Arguments:
-    n (int): The index of the element to be calculated and printed.
+    Prints the nth element in a series.
+    Parameters:
+    n (int): The index of the element to be printed.
     first (int): The first element in the series. Default value is 0.
     second (int): The second element in the series. Default value is 1.
-
     Returns:
     int: The nth element in the series.
-
-    Examples:
-    If n is 0, the function returns and prints the first element (0).
-    If n is 1, the function returns and prints the second element (1).
-    If n is 6 and the first two elements are 0 and 1, the function returns and prints the sixth element (8).
     """
+    if not isinstance(n, int) or n < 0:
+        print("Invalid input:", n)
+        raise ValueError("n must be a positive integer")
+    
     if first == 0 and second == 1:
         return fibonacci(n)
 
