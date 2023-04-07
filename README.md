@@ -8,7 +8,7 @@
 
         - How to initialize/run your application 
             1. clone the repo on your local machine (git clone SSH).
-            2. navagate to it (cd).
+            2. navigate to it (cd).
             3. create a venv (python3.11 -m venv .venv)
             4. activate it (.venv/bin/activate)
 
